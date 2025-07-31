@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tarefa Formulário</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Formulário</h1>
+
+        <div id="formularioContainer">
+            <form id="formulario" action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Nome" required><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="E-mail" required><br>
+
+                <label for="data"></label>
+                <input type="date" id="date" name="date" required>
+                    
+                    
+                <select name="generoSelector" id="generoSelector">
+                    <option value="genero">Masculino</option>
+                    <option value="genero">Feminino</option>
+                    <option value="genero">Não Informar</option>
+                </select>
+
+                <label for="menssage">Deixe seu Feedback:</label>
+                <textarea name="message" id="message" rows="4"></textarea>
+
+                <label for="enviar"></label>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
